@@ -1,0 +1,154 @@
+[
+  {
+    "slug": "dapur-sds",
+    "config": {
+      "namaBisnis": "Dapur SDS",
+      "kategori": "Kuliner Rumahan & Katering PO",
+      "tagline": "Masakan Rumahan Segar, Halal, dan Siap Antar Area Cilodong & Grand Depok City.",
+      "warnaUtama": "#c2410c",
+      "warnaHover": "#9a3412",
+      "logo": "",
+      "fotoHero": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1000&q=80",
+      "whatsapp": "6281234567890",
+      "pesanDefaultWA": "Halo Dapur SDS, saya mau tanya menu PO & pemesanan hari ini ya.",
+      "keunggulan": [
+        {
+          "icon": "fa-utensils",
+          "judul": "Fresh Made by Order",
+          "desc": "Dimasak segar sesuai pesanan dengan bahan pilihan."
+        },
+        {
+          "icon": "fa-truck-fast",
+          "judul": "Antar Area Cilodong–GDC",
+          "desc": "Pengiriman cepat dan aman langsung ke rumah atau kantor."
+        },
+        {
+          "icon": "fa-circle-check",
+          "judul": "Halal & Higienis",
+          "desc": "Cocok untuk makan keluarga, arisan, hingga rapat kantor."
+        }
+      ],
+      "layanan": [
+        {
+          "nama": "Paket Nasi Box Komplit",
+          "harga": "Rp25.000",
+          "desc": "Nasi putih, lauk utama, sayur, sambal, lalapan, dan kerupuk.",
+          "foto": "",
+          "populer": true
+        },
+        {
+          "nama": "Paket Lauk Harian Keluarga",
+          "harga": "Rp65.000",
+          "desc": "Porsi untuk 3–4 orang, praktis tanpa perlu repot masak.",
+          "foto": "",
+          "populer": false
+        },
+        {
+          "nama": "Tumpeng Mini Acara",
+          "harga": "Rp35.000",
+          "desc": "Cocok untuk syukuran, ulang tahun, dan pengajian (min. 15 pax).",
+          "foto": "",
+          "populer": false
+        },
+        {
+          "nama": "Snack Box Rapat / Arisan",
+          "harga": "Rp15.000",
+          "desc": "Isi 3 kue tradisional pilihan + air mineral gelas.",
+          "foto": "",
+          "populer": false
+        }
+      ],
+      "galeri": [],
+      "testimoni": [
+        {
+          "nama": "Ibu Rina – GDC",
+          "teks": "Masakannya enak banget, bumbunya pas seperti masakan rumah sendiri. Langganan tiap ada acara!"
+        },
+        {
+          "nama": "Pak Hendra – Cilodong",
+          "teks": "Pesan nasi box buat rapat kantor selalu tepat waktu dan porsinya memuaskan."
+        }
+      ],
+      "alamat": "Area Cilodong & Grand Depok City, Kota Depok",
+      "jamBuka": "Senin – Sabtu: 08.00 – 19.00 WIB (PO H-1)",
+      "linkGoogleMaps": "https://maps.google.com/?q=Grand+Depok+City+Depok",
+      "creditAgensi": "Dibuat oleh Cilodong Digital UMKM"
+    }
+  },
+  {
+    "slug": "autocar",
+    "config": {
+      "namaBisnis": "AutoCar Detailing & Bengkel",
+      "kategori": "Bengkel, Cuci & Salon Mobil",
+      "tagline": "Perawatan Mobil Profesional, Servis Berkala, dan Detailing Kilap di Area Cilodong–GDC.",
+      "warnaUtama": "#1d4ed8",
+      "warnaHover": "#1e40af",
+      "logo": "",
+      "fotoHero": "https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&w=1000&q=80",
+      "whatsapp": "6281298765432",
+      "pesanDefaultWA": "Halo AutoCar, saya mau tanya jadwal booking servis / detailing mobil ya.",
+      "keunggulan": [
+        {
+          "icon": "fa-wrench",
+          "judul": "Mekanik Berpengalaman",
+          "desc": "Ditangani teknisi ahli dengan peralatan diagnostik modern."
+        },
+        {
+          "icon": "fa-calendar-check",
+          "judul": "Booking Cepat via WA",
+          "desc": "Atur jadwal datang tanpa perlu antre lama di bengkel."
+        },
+        {
+          "icon": "fa-shield-halved",
+          "judul": "Garansi Pengerjaan",
+          "desc": "Suku cadang terjamin dan hasil pengerjaan bergaransi."
+        }
+      ],
+      "layanan": [
+        {
+          "nama": "Cuci Mobil Hidrolik + Wax",
+          "harga": "Rp60.000",
+          "desc": "Cuci kolong bersih, vacuum interior, semir ban, dan poles wax kilap.",
+          "foto": "",
+          "populer": true
+        },
+        {
+          "nama": "Servis Berkala & Ganti Oli",
+          "harga": "Mulai Rp350.000",
+          "desc": "Cek rem, filter udara, aki, kaki-kaki, dan penggantian oli mesin.",
+          "foto": "",
+          "populer": false
+        },
+        {
+          "nama": "Salon Mobil Full Detailing",
+          "harga": "Rp650.000",
+          "desc": "Poles bodi menghilangkan baret halus, bersihkan jamur kaca & interior.",
+          "foto": "",
+          "populer": false
+        },
+        {
+          "nama": "Nano Ceramic Coating",
+          "harga": "Mulai Rp1.800.000",
+          "desc": "Perlindungan cat mobil jangka panjang dengan efek daun talas.",
+          "foto": "",
+          "populer": false
+        }
+      ],
+      "galeri": [],
+      "testimoni": [
+        {
+          "nama": "Pak Agus – GDC",
+          "teks": "Hasil salon mobilnya bening banget kayak baru keluar dari showroom. Ruang tunggunya juga nyaman."
+        },
+        {
+          "nama": "Mas Dimas – Cilodong",
+          "teks": "Servis berkala transparan soal harga dan sparepart, nggak ada biaya tersembunyi."
+        }
+      ],
+      "alamat": "Jl. Boulevard Grand Depok City, Cilodong, Kota Depok",
+      "jamBuka": "Setiap Hari: 08.00 – 18.00 WIB",
+      "linkGoogleMaps": "https://maps.google.com/?q=Grand+Depok+City+Depok",
+      "creditAgensi": "Dibuat oleh Cilodong Digital UMKM"
+    }
+  }
+]

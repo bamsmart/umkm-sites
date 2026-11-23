@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="page-title">Dapur SDS - Kuliner Rumahan &amp; Katering PO</title>
+    <meta name="description" content="Masakan Rumahan Segar, Halal, dan Siap Antar Area Cilodong &amp; Grand Depok City." />
+    
+
+    <!-- Open Graph / WhatsApp Link Preview -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Dapur SDS - Kuliner Rumahan &amp; Katering PO" />
+    <meta property="og:description" content="Masakan Rumahan Segar, Halal, dan Siap Antar Area Cilodong &amp; Grand Depok City." />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&amp;fit=crop&amp;w=1000&amp;q=80" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#c2410c" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <style>
+        :root {
+            --primary: #c2410c;
+            --primary-hover: #9a3412;
+        }
+
+        .bg-primary {
+            background-color: var(--primary);
+        }
+
+        .bg-primary:hover {
+            background-color: var(--primary-hover);
+        }
+
+        .text-primary {
+            color: var(--primary);
+        }
+
+        .border-primary {
+            border-color: var(--primary);
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <!-- CONFIG KLIEN (DIISI OTOMATIS OLEH scripts/generate.py) -->
+    <script>
+        const CONFIG = {
+      "namaBisnis": "Dapur SDS",
+      "kategori": "Kuliner Rumahan & Katering PO",
+      "tagline": "Masakan Rumahan Segar, Halal, dan Siap Antar Area Cilodong & Grand Depok City.",
+      "warnaUtama": "#c2410c",
+      "warnaHover": "#9a3412",
+      "logo": "",
+      "fotoHero": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1000&q=80",
+      "whatsapp": "6281234567890",
+      "pesanDefaultWA": "Halo Dapur SDS, saya mau tanya menu PO & pemesanan hari ini ya.",
+      "keunggulan": [
+            {
+                  "icon": "fa-utensils",
+                  "judul": "Fresh Made by Order",
+                  "desc": "Dimasak segar sesuai pesanan dengan bahan pilihan."
+            },
+            {
+                  "icon": "fa-truck-fast",
+                  "judul": "Antar Area Cilodong–GDC",
+                  "desc": "Pengiriman cepat dan aman langsung ke rumah atau kantor."
+            },
+            {
+                  "icon": "fa-circle-check",
+                  "judul": "Halal & Higienis",
+                  "desc": "Cocok untuk makan keluarga, arisan, hingga rapat kantor."
+            }
+      ],
+      "layanan": [
+            {
+                  "nama": "Paket Nasi Box Komplit",
+                  "harga": "Rp25.000",
+                  "desc": "Nasi putih, lauk utama, sayur, sambal, lalapan, dan kerupuk.",
+                  "foto": "",
+                  "populer": true
+            },
+            {
+                  "nama": "Paket Lauk Harian Keluarga",
+                  "harga": "Rp65.000",
+                  "desc": "Porsi untuk 3–4 orang, praktis tanpa perlu repot masak.",
+                  "foto": "",
+                  "populer": false
+            },
+            {
+                  "nama": "Tumpeng Mini Acara",
+                  "harga": "Rp35.000",
+                  "desc": "Cocok untuk syukuran, ulang tahun, dan pengajian (min. 15 pax).",
+                  "foto": "",
+                  "populer": false
+            },
+            {
+                  "nama": "Snack Box Rapat / Arisan",
+                  "harga": "Rp15.000",
+                  "desc": "Isi 3 kue tradisional pilihan + air mineral gelas.",
+                  "foto": "",
+                  "populer": false
+            }
+      ],
+      "galeri": [],
+      "testimoni": [
+            {
+                  "nama": "Ibu Rina – GDC",
+                  "teks": "Masakannya enak banget, bumbunya pas seperti masakan rumah sendiri. Langganan tiap ada acara!"
+            },
+            {
+                  "nama": "Pak Hendra – Cilodong",
+                  "teks": "Pesan nasi box buat rapat kantor selalu tepat waktu dan porsinya memuaskan."
+            }
+      ],
+      "alamat": "Area Cilodong & Grand Depok City, Kota Depok",
+      "jamBuka": "Senin – Sabtu: 08.00 – 19.00 WIB (PO H-1)",
+      "linkGoogleMaps": "https://maps.google.com/?q=Grand+Depok+City+Depok",
+      "creditAgensi": "Dibuat oleh Cilodong Digital UMKM"
+};
+    </script>
+
+    <!-- NAVBAR -->
+    <nav class="sticky top-0 z-40 bg-white/90 backdrop-blur border-b border-slate-200">
+        <div class="max-w-4xl mx-auto px-4 py-3 flex justify-between items-center gap-3">
+            <div class="flex items-center gap-3 min-w-0">
+                <img id="nav-logo" src="" alt="" class="hidden w-10 h-10 rounded-lg object-cover border border-slate-200 shrink-0" />
+                <div class="min-w-0">
+                    <h1 id="nav-brand" class="font-bold text-lg leading-tight text-slate-900 truncate"></h1>
+                    <p id="nav-category" class="text-xs text-slate-500 truncate"></p>
+                </div>
+            </div>
+            <a id="nav-wa-btn" href="#" target="_blank" rel="noopener noreferrer"
+                class="bg-primary text-white text-sm font-semibold px-4 py-2 rounded-full shadow-sm transition flex items-center gap-2 shrink-0">
+                <i class="fa-brands fa-whatsapp text-base"></i> Chat WA
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="relative bg-slate-900 text-white">
+        <img id="hero-img" src="" alt="Banner" class="absolute inset-0 w-full h-full object-cover opacity-40" />
+        <div class="relative max-w-4xl mx-auto px-4 py-16 md:py-24 text-center">
+            <span id="hero-badge"
+                class="inline-block bg-white/20 backdrop-blur text-xs font-semibold px-3 py-1 rounded-full mb-4"></span>
+            <h2 id="hero-title" class="text-3xl md:text-5xl font-extrabold tracking-tight mb-4"></h2>
+            <p id="hero-tagline" class="text-slate-200 text-base md:text-lg max-w-xl mx-auto mb-8"></p>
+            <div class="flex flex-col sm:flex-row justify-center gap-3">
+                <a id="hero-wa-btn" href="#" target="_blank" rel="noopener noreferrer"
+                    class="bg-primary text-white font-bold px-6 py-3.5 rounded-xl shadow-lg transition flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-xl"></i> Pesan / Tanya via WhatsApp
+                </a>
+                <a href="#layanan"
+                    class="bg-white text-slate-900 hover:bg-slate-100 font-semibold px-6 py-3.5 rounded-xl transition">
+                    Lihat Daftar Harga
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- KEUNGGULAN -->
+    <section id="section-keunggulan" class="max-w-4xl mx-auto px-4 -mt-8 relative z-10">
+        <div id="keunggulan-list" class="grid grid-cols-1 md:grid-cols-3 gap-4"></div>
+    </section>
+
+    <!-- DAFTAR LAYANAN / MENU -->
+    <section id="layanan" class="max-w-4xl mx-auto px-4 py-14">
+        <div class="text-center mb-8">
+            <h3 class="text-2xl font-bold text-slate-900">Layanan & Daftar Harga</h3>
+            <p class="text-sm text-slate-500 mt-1">Klik tombol pesan untuk langsung terhubung ke WhatsApp kami.</p>
+        </div>
+        <div id="layanan-list" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
+    </section>
+
+    <!-- GALERI FOTO (OPSIONAL) -->
+    <section id="section-galeri" class="max-w-4xl mx-auto px-4 pb-14">
+        <div class="text-center mb-8">
+            <h3 class="text-2xl font-bold text-slate-900">Galeri</h3>
+            <p class="text-sm text-slate-500 mt-1">Dokumentasi produk & hasil pesanan pelanggan kami.</p>
+        </div>
+        <div id="galeri-list" class="grid grid-cols-2 md:grid-cols-3 gap-3"></div>
+    </section>
+
+    <!-- TESTIMONI -->
+    <section id="section-testimoni" class="bg-white border-y border-slate-200 py-14">
+        <div class="max-w-4xl mx-auto px-4">
+            <h3 class="text-2xl font-bold text-slate-900 text-center mb-8">Kata Pelanggan Kami</h3>
+            <div id="testimoni-list" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
+        </div>
+    </section>
+
+    <!-- LOKASI & JAM BUKA -->
+    <section class="max-w-4xl mx-auto px-4 py-14">
+        <div
+            class="bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-slate-200 flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+            <div class="space-y-3">
+                <h3 class="text-xl font-bold text-slate-900">Lokasi & Jam Operasional</h3>
+                <p class="text-sm text-slate-600 flex items-start gap-2.5">
+                    <i class="fa-solid fa-location-dot text-primary mt-1"></i>
+                    <span id="info-alamat"></span>
+                </p>
+                <p class="text-sm text-slate-600 flex items-center gap-2.5">
+                    <i class="fa-solid fa-clock text-primary"></i>
+                    <span id="info-jam"></span>
+                </p>
+            </div>
+            <a id="btn-maps" href="#" target="_blank" rel="noopener noreferrer"
+                class="w-full md:w-auto text-center bg-slate-900 hover:bg-slate-800 text-white font-semibold px-6 py-3 rounded-xl transition flex items-center justify-center gap-2">
+                <i class="fa-solid fa-map-location-dot"></i> Buka di Google Maps
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="text-center py-8 text-xs text-slate-400 border-t border-slate-200">
+        <p id="footer-copy"></p>
+        <p id="footer-credit" class="mt-1"></p>
+    </footer>
+
+    <!-- FLOATING WHATSAPP -->
+    <a id="float-wa" href="#" target="_blank" rel="noopener noreferrer" aria-label="Chat via WhatsApp"
+        class="fixed bottom-5 right-5 z-50 bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full shadow-xl flex items-center justify-center text-3xl transition hover:scale-105">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- SCRIPT RENDER OTOMATIS -->
+    <script>
+        const escapeHtml = (str = '') => String(str)
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#39;');
+
+        const safeUrl = (url = '') => {
+            const val = String(url).trim();
+            if (/^(https?:\/\/|\.\/assets\/)/i.test(val)) return val;
+            return '#';
+        };
+
+        const safeIcon = (icon = '') => /^fa-[a-z0-9-]+$/i.test(icon) ? icon : 'fa-check';
+
+        const waNumber = String(CONFIG.whatsapp || '').replace(/\D/g, '');
+        const waLink = (pesan) => `https://wa.me/${waNumber}?text=${encodeURIComponent(pesan)}`;
+
+        // Terapkan Warna Tema
+        document.documentElement.style.setProperty('--primary', CONFIG.warnaUtama);
+        document.documentElement.style.setProperty('--primary-hover', CONFIG.warnaHover);
+
+        // Logo (Opsional)
+        if (CONFIG.logo) {
+            const navLogo = document.getElementById('nav-logo');
+            navLogo.src = safeUrl(CONFIG.logo);
+            navLogo.alt = `Logo ${CONFIG.namaBisnis}`;
+            navLogo.classList.remove('hidden');
+        }
+
+        // Isi Teks & Link Utama
+        document.getElementById('page-title').textContent = `${CONFIG.namaBisnis} - ${CONFIG.kategori}`;
+        document.getElementById('nav-brand').textContent = CONFIG.namaBisnis;
+        document.getElementById('nav-category').textContent = CONFIG.kategori;
+        const heroImg = document.getElementById('hero-img');
+        heroImg.src = safeUrl(CONFIG.fotoHero);
+        heroImg.alt = CONFIG.namaBisnis;
+        document.getElementById('hero-badge').textContent = CONFIG.kategori;
+        document.getElementById('hero-title').textContent = CONFIG.namaBisnis;
+        document.getElementById('hero-tagline').textContent = CONFIG.tagline;
+        document.getElementById('info-alamat').textContent = CONFIG.alamat;
+        document.getElementById('info-jam').textContent = CONFIG.jamBuka;
+        document.getElementById('btn-maps').href = safeUrl(CONFIG.linkGoogleMaps);
+        document.getElementById('footer-copy').textContent = `© ${new Date().getFullYear()} ${CONFIG.namaBisnis}. All rights reserved.`;
+
+        const footerCredit = document.getElementById('footer-credit');
+        if (CONFIG.creditAgensi) {
+            footerCredit.textContent = CONFIG.creditAgensi;
+        } else {
+            footerCredit.remove();
+        }
+
+        const defaultWaUrl = waLink(CONFIG.pesanDefaultWA);
+        ['nav-wa-btn', 'hero-wa-btn', 'float-wa'].forEach(id => {
+            document.getElementById(id).href = defaultWaUrl;
+        });
+
+        // Render Keunggulan
+        if (CONFIG.keunggulan && CONFIG.keunggulan.length > 0) {
+            document.getElementById('keunggulan-list').innerHTML = CONFIG.keunggulan.map(k => `
+      <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-100 flex items-start gap-3.5">
+        <div class="w-10 h-10 rounded-lg bg-slate-100 text-primary flex items-center justify-center shrink-0">
+          <i class="fa-solid ${safeIcon(k.icon)} text-lg"></i>
+        </div>
+        <div>
+          <h4 class="font-bold text-sm text-slate-900">${escapeHtml(k.judul)}</h4>
+          <p class="text-xs text-slate-500 mt-0.5">${escapeHtml(k.desc)}</p>
+        </div>
+      </div>
+    `).join('');
+        } else {
+            document.getElementById('section-keunggulan').remove();
+        }
+
+        // Render Layanan (mendukung foto opsional per item)
+        document.getElementById('layanan-list').innerHTML = (CONFIG.layanan || []).map(item => `
+      <div class="bg-white rounded-xl shadow-sm border ${item.populer ? 'border-primary ring-1 ring-inset' : 'border-slate-200'} overflow-hidden flex flex-col justify-between">
+        <div>
+          ${item.foto ? `<img src="${escapeHtml(safeUrl(item.foto))}" alt="${escapeHtml(item.nama)}" loading="lazy" class="w-full h-44 object-cover border-b border-slate-100" />` : ''}
+          <div class="p-5 pb-4">
+            <div class="flex justify-between items-start gap-2">
+              <h4 class="font-bold text-slate-900">${escapeHtml(item.nama)}</h4>
+              <span class="font-extrabold text-primary whitespace-nowrap">${escapeHtml(item.harga)}</span>
+            </div>
+            ${item.populer ? '<span class="inline-block mt-1 text-[10px] font-bold uppercase tracking-wider bg-amber-100 text-amber-800 px-2 py-0.5 rounded">Favorit</span>' : ''}
+            <p class="text-xs text-slate-500 mt-2">${escapeHtml(item.desc)}</p>
+          </div>
+        </div>
+        <div class="px-5 pb-5">
+          <a href="${escapeHtml(waLink(`Halo ${CONFIG.namaBisnis}, saya mau pesan/booking layanan: ${item.nama} (${item.harga})`))}" target="_blank" rel="noopener noreferrer"
+             class="block w-full text-center text-xs font-bold py-2.5 rounded-lg border border-primary text-primary hover:bg-primary hover:text-white transition">
+            Pesan via WhatsApp
+          </a>
+        </div>
+      </div>
+    `).join('');
+
+        // Render Galeri (Opsional)
+        if (CONFIG.galeri && CONFIG.galeri.length > 0) {
+            document.getElementById('galeri-list').innerHTML = CONFIG.galeri.map(g => {
+                const src = typeof g === 'string' ? g : g.foto;
+                const caption = typeof g === 'string' ? '' : (g.caption || '');
+                return `
+      <figure class="bg-white rounded-xl overflow-hidden border border-slate-200 shadow-sm">
+        <img src="${escapeHtml(safeUrl(src))}" alt="${escapeHtml(caption || CONFIG.namaBisnis)}" loading="lazy" class="w-full aspect-square object-cover" />
+        ${caption ? `<figcaption class="px-3 py-2 text-xs text-slate-600 truncate">${escapeHtml(caption)}</figcaption>` : ''}
+      </figure>
+    `;
+            }).join('');
+        } else {
+            document.getElementById('section-galeri').remove();
+        }
+
+        // Render Testimoni
+        if (CONFIG.testimoni && CONFIG.testimoni.length > 0) {
+            document.getElementById('testimoni-list').innerHTML = CONFIG.testimoni.map(t => `
+      <div class="bg-slate-50 p-5 rounded-xl border border-slate-200">
+        <div class="text-amber-400 text-xs mb-2">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <p class="text-sm text-slate-700 italic">"${escapeHtml(t.teks)}"</p>
+        <p class="text-xs font-bold text-slate-900 mt-3">— ${escapeHtml(t.nama)}</p>
+      </div>
+    `).join('');
+        } else {
+            document.getElementById('section-testimoni').remove();
+        }
+    </script>
+</body>
+
+</html>
